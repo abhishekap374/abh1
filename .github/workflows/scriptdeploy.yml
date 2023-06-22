@@ -15,7 +15,7 @@ jobs:
         with:
           fetchdepth: 0
       - name: script push to New repo
-        if: '${{ github.ref == refs/head/workflow }}'
+        if: ${{ 'github.ref == refs/head/workflow' }}
         run: |
           echo "Pushing the script files to the Mulesoft server"
           echo ${{ env.branchname }}
