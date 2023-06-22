@@ -7,4 +7,3 @@ if [ ! -d "$folder1" ]; then
 fi
 mkdir -p "$folder1"
 cp -r "$folder1/*" "$folder1"
-ls
