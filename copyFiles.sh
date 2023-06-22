@@ -1,9 +1,9 @@
 #!/bin/bash
-srcpath=$1
-dstpath=$2
-if [ ! -d "$srcpath" ]; then
-    echo "Source path: $srcpath doesn't exist"
+folder1=$1
+folder1=$2
+if [ ! -d "$folder1" ]; then
+    echo "Source path: $folder1 doesn't exist"
     exit 1
 fi
-mkdir -p "$dstpath"
-cp -r "$srcpath/*" "$dstpath"
+mkdir -p "$folder1"
+cp -r "$folder1/*" "$folder1"
