@@ -1,12 +1,15 @@
 name: Mulesoft_Script file Deploy
-'on':
+on:
   push:
     branches:
       - workflow
+  workflow_dispatch:
+  
 jobs:
-  push_code_job1:
-    name: script push to New repo
-    runs_on: ubuntu-latest
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-18.04
+    
     steps:
       - uses: actions/checkout@v3
         with:
