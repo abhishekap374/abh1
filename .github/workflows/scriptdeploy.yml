@@ -12,8 +12,8 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetchdepth: 0
+       # with:
+       #   fetchdepth: 0
       - name: script push to New repo
         if: ${{ github.ref == 'refs/head/workflow' }}
         run: |
